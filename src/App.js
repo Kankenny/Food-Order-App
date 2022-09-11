@@ -1,7 +1,18 @@
-import './App.css'
+import React, { Fragment } from 'react'
 
-function App() {
-	return <div className="App">Hello World</div>
+import './App.css'
+import Header from './Components/Layout/Header'
+import Meals from './Components/Meals/Meals'
+
+const App = () => {
+	return (
+		<Fragment>
+			<Header />
+			<main>
+				<Meals />
+			</main>
+		</Fragment>
+	)
 }
 
 export default App
